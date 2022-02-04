@@ -1,0 +1,9 @@
+<?php
+$helper = $this->helper('Youwe\ApiFetch\Helper\Data');
+$ApiUrl = $helper->getApiUrl();
+?>
+
+<div class="api-fetch-block" data-mage-init='{"apiFetch":{"ApiUrl": "<?php echo $ApiUrl; ?>"}}'>
+    <button id="fetch-users"><?php echo __('Users list'); ?></button>
+    <ul class="users"></ul>
+</div>
